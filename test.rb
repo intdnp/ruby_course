@@ -1,3 +1,3 @@
 def accum(s)
-  s.downcase.split("").map.with_index { |x, i| x.upcase + x * i}.join("-")
+  s.split("").map.with_index { |x, i| x.upcase + x.downcase * i}.join("-")
 end
